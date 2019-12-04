@@ -63,11 +63,16 @@ void process_image_callback(const sensor_msgs::Image img)
        for (int width = 0; width < img.step; width+=3) 
         {
        
-       //   ROS_INFO_STREAM("Pixel: " + std::to_string(i) + " Pixel value: " + std::to_string(img.data[i]));
+        //  ROS_INFO_STREAM("Width: " + std::to_string(width) + " Pixel value: " + std::to_string(width%2400);
        if (img.data[width*height] == white_pixel & img.data[(width*height)+1] == white_pixel & img.data[(width*height)+2] == 255)
         {
-          velocity = height * 0.002 - (abs(width - img.step/2.0)) * 0.0001;
-          direction = (width - img.step/2.0) * 0.0004 - height * 0.0005;
+          // ROS_INFO_STREAM("Width: " + std::to_string(width) + " Pixel value: " + std::to_string((height*width)%img.step));
+          // Check the location of white pixel
+
+          float pixel_column = (height*width)%img.step;
+
+          velocity = (img.height - height) * 0.006 - (abs((img.width/2.0) - pixel_column)) * 0.0002;
+          direction = ((img.width/2.0) - pixel_column) * 0.01 - (img.height - height) * 0.0001;
 
           closing_in = true;
           ROS_INFO_STREAM("height : " + std::to_string(height) + " width : " + std::to_string(width));

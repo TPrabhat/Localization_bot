@@ -107,7 +107,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <box>
-              <size>0.8 0.8 0.2</size>
+              <size>0.8 0.8 0.3</size>
             </box>
           </geometry>
           <surface>
@@ -191,7 +191,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <box>
-              <size>0.8 0.8 0.2</size>
+              <size>0.8 0.8 0.3</size>
             </box>
           </geometry>
           <material>
@@ -464,7 +464,7 @@
         </axis>
       </joint>
       <link name='rear_left_wheel'>
-        <pose frame=''>-0.6 0.45 0 0 -0 0</pose>
+        <pose frame=''>-0.4 0.45 0 0 -0 0</pose>
         <inertial>
           <pose frame=''>0 0 0 0 -0 0</pose>
           <mass>5</mass>
@@ -539,7 +539,7 @@
         </axis>
       </joint>
       <link name='rear_right_wheel'>
-        <pose frame=''>-0.6 -0.45 0 0 -0 0</pose>
+        <pose frame=''>-0.4 -0.45 0 0 -0 0</pose>
         <inertial>
           <pose frame=''>0 0 0 0 -0 0</pose>
           <mass>5</mass>
@@ -2573,10 +2573,10 @@
           <kinematic>0</kinematic>
           <enable_wind>0</enable_wind>
           <visual name='visual'>
-            <pose frame=''>0 0 0 0 -0 0</pose>
+            <pose frame=''>0 0 0.1 0 -0 0</pose>
             <geometry>
               <sphere>
-                <radius>0.2</radius>
+                <radius>0.1</radius>
               </sphere>
             </geometry>
             <material>
@@ -2599,10 +2599,10 @@
           <collision name='collision'>
             <laser_retro>0</laser_retro>
             <max_contacts>10</max_contacts>
-            <pose frame=''>0 0 0 0 -0 0</pose>
+            <pose frame=''>0 0 0.1 0 -0 0</pose>
             <geometry>
               <sphere>
-                <radius>0.2</radius>
+                <radius>0.1</radius>
               </sphere>
             </geometry>
             <surface>
@@ -3103,7 +3103,7 @@
           <kinematic>0</kinematic>
           <enable_wind>0</enable_wind>
           <visual name='visual'>
-            <pose frame=''>0 0 0 0 -0 0</pose>
+            <pose frame=''>0 0 0.1 0 -0 0</pose>
             <geometry>
               <sphere>
                 <radius>0.1</radius>
@@ -3129,7 +3129,7 @@
           <collision name='collision'>
             <laser_retro>0</laser_retro>
             <max_contacts>10</max_contacts>
-            <pose frame=''>0 0 0 0 -0 0</pose>
+            <pose frame=''>0 0 0.1 0 -0 0</pose>
             <geometry>
               <sphere>
                 <radius>0.1</radius>
@@ -3210,7 +3210,7 @@
         <kinematic>0</kinematic>
         <enable_wind>0</enable_wind>
         <visual name='visual'>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.1 0 -0 0</pose>
           <geometry>
             <sphere>
               <radius>0.1</radius>
@@ -3236,7 +3236,7 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.1 0 -0 0</pose>
           <geometry>
             <sphere>
               <radius>0.1</radius>
